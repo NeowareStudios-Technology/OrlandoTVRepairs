@@ -1,674 +1,1943 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/idangerous.swiper.css" rel="stylesheet" type="text/css" />
-    <link href="css/devices.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
-  	<title>Omni</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ==== Document Title ==== -->
+    <title>QuickFix - Multipurpose Servicing and Repairing HTML Template</title>
+    
+    <!-- ==== Document Meta ==== -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- ==== Favicons ==== -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <!-- ==== Google Font ==== -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700%7CSource+Sans+Pro:300,400,600" rel="stylesheet">
+
+    <!-- ==== Font Awesome ==== -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- ==== jQuery UI ==== -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    
+    <!-- ==== Bootstrap ==== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    
+    <!-- ==== jQuery FakeLoader Plugin ==== -->
+    <link href="css/fakeLoader.min.css" rel="stylesheet">
+    
+    <!-- ==== jQuery Timepicker Plugin ==== -->
+    <link href="css/jquery.timepicker.min.css" rel="stylesheet">
+    
+    <!-- ==== jQuery Magnific Popup Plugin ==== -->
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    
+    <!-- ==== Main Stylesheet ==== -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- ==== Responsive Stylesheet ==== -->
+    <link href="css/responsive-style.css" rel="stylesheet">
+    
+    <!-- ==== Theme Color Stylesheet ==== -->
+    <link href="css/colors/color-1.css" rel="stylesheet" id="changeColorScheme">
+    
+    <!-- ==== Custom Stylesheet ==== -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body data-theme="theme-1">
-
-    <!-- HEADER -->
-    <header>
-        <a href="index.html" id="logo"><img src="img/theme-1/logo.png" alt="" /><img class="act" src="img/theme-1/logo-act.png" alt=""/></a>
-        <div class="mob-icon">
-            <span></span>
-        </div>
-        <nav>
-            <ul>
-                <li class="submeny">
-                    <a href="#home" class="submeny-top act scroll-to-link">Home</a>
-                    <ul>
-                        <li><a href="index-5.html">home app screens</a></li>
-                        <li><a href="index-6.html">home sidebar menu</a></li>
-                        <li><a href="index.html">home welcome banner</a></li>
-                        <li><a href="index-2.html">home banner with tabs</a></li>
-                        <li><a href="index-3.html">home banner-slider</a></li>
-                        <li><a href="index-4.html">home video banner</a></li>
-                    </ul>
-                </li>
-                <li><a href="#about" class="scroll-to-link">about</a></li>
-                <li><a href="#why" class="scroll-to-link">Why</a></li>
-                <li><a href="#benefits" class="scroll-to-link">benefits</a></li>
-                <li><a href="#how-it-work" class="scroll-to-link">how it work</a></li>
-                <li><a href="#tech-specs" class="scroll-to-link">tech specs</a></li>
-                <li><a href="#take-a-tour" class="scroll-to-link">take a tour</a></li>
-                <li><a href="#contact" class="scroll-to-link">contact</a></li>
-                <li class="submeny">
-                    <a href="#" class="submeny-top">Pages</a>
-                    <ul>
-                        <li><a href="blog.html">blog standart</a></li>
-                        <li><a href="blog-2.html">blog fullwidth</a></li>
-                        <li><a href="blog-3.html">blog left/right post</a></li>
-                        <li><a href="blog-detail.html">standart post</a></li>
-                        <li><a href="blog-detail-2.html">fullwidth post</a></li>
-                        <li><a href="gallery.html">gallery style 1</a></li>
-                        <li><a href="gallery-2.html">gallery style 2</a></li>
-                        <li><a href="el.html">elements</a></li>
-                        <li><a href="teaser-background.html">teaser standart</a></li>
-                        <li><a href="teaser-circles.html">teaser video</a></li>
-                        <li><a href="page-404.html">page 404</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>                                                                          
-    </header>
+<body>
     
-    <!-- LOADER -->
-    <div id="loader-wrapper">
-        <img src="img/theme-1/logo.png" alt=""/>
-        <span></span>
-    </div>
+    <!-- Preloader Start -->
+    <div class="preloader bg--color-theme"></div>
+    <!-- Preloader End -->
     
-    <div id="content-wrapper">
-        
-        <div class="blocks-container">
-            
-            <!-- BLOCK "TYPE 1" -->
-            <div class="block type-1 scroll-to-block" data-id="home">
-                <div class="clip">	
-                    <div class="bg" style="background-image:url(img/content/Home-1/banner_1.jpg);">
-                    </div>
-                    <div class="bg-span"></div>
-                </div>
-                <div class="container type-1-text wow flipInX" data-wow-delay="0.3s">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 type-1-center">
-                            <article class="big white table">
-                                <h1 class="h1">make your life simplier</h1>
-                                <p>Praesent iaculis ligula eu nulla porttitor, eget imperdiet odio pulvinar. Donec massa arcu fermentum ac urna.</p>
-                                <a href="#" class="button"><span>take a tour</span></a>
-                                <a href="#" class="button"><span>get app now</span></a>
-                            </article>
-                        </div>                   
-                    </div>
-                </div>
-                <div class="numbers">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_1.jpg" alt="" />
-                                <img class="thumbs-icon" src="img/icon.png" alt=""/>
-                                <span class="num">2489</span>
-                                <span class="num-text">Cups of Coffee</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_2.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon1.png" alt=""/>
-                                <span class="num">100</span>
-                                <span class="num-text">Happy Users</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_3.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon2.png" alt=""/>
-                                <span class="num">1823</span>
-                                <span class="num-text">Hours of Work</span>
-                            </div>
-                            <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
-                                <img class="thumbs-image" src="img/content/Home-1/banner_thumbnail_4.jpg" alt=""/>
-                                <img class="thumbs-icon" src="img/icon3.png" alt=""/>
-                                <span class="num">5024</span>
-                                <span class="num-text">Feedbacks</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 1" -->
-            
-            <!-- BLOCK "TYPE 2" -->
-            <div class="block type-2 scroll-to-block" data-id="about">
-                <div class="container-fluid type-2-text">
-                    <div class="row">
-                        <div class="image-block mob-hide wow fadeInLeft" data-wow-delay="0.3s">
-                            <img class="center-image" src="img/content/Home-1/big_content_image_1.jpg" alt=""/>
-                            <a href="#" class="play" data-src="https://www.youtube.com/embed/RqMmtcPjCwA?rel=0"></a>
-                        </div>
-                        <div class="col-md-4 col-md-offset-7 col-sm-12 col-sm-offset-0 wow fadeInRight" data-wow-delay="0.3s">
-                            <article class="normall">
-                                <h2 class="h2 titel-left">Discover new horizons</h2>
-                                <p>Donec volutpat enim at interdum pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sodales mauris pretium scelerisque lobortis. Aenean venenatis suscipit vehicula. Phasellus condimentum laoreet nibh at consectetur. Suspendisse potenti mauris pretium. Cras sollicitudin lorem risus, sed ultrices odio aliquam at. Mauris posuere diam at enim malesuada, ac malesuada erat auctor. Ut porta mattis tellus eu sagittis.</p>
-                                <a href="#" class="button"><span>learn more</span></a>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 2" -->
-            
-            <!-- BLOCK "TYPE 2" -->
-            <div class="block type-2 scroll-to-block" data-id="why">
-                <div class="container-fluid type-2-text">
-                    <div class="row">
-                        
-                        <div class="col-md-4 col-md-offset-1 col-sm-12 col-sm-offset-0 wow fadeInLeft" data-wow-delay="0.3s">
-                            <article class="normall">
-                                <h2 class="h2 titel-left">why our app</h2>
-                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor sed. Sed eget justo at erat suscipit tristique sit.</p>
-                            </article>
-                            <!-- BLOCK "TYPE 3" -->
-                            <div class="block type-3">
-                                <div class="container-fluid type-3-text">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <img src="img/theme-1/icon4.png" alt=""/>
-                                            <article class="small">
-                                                <h4 class="h4">why our app</h4>
-                                                <p>Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficiturus sed.</p>
-                                            </article>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <img src="img/theme-1/icon5.png" alt=""/>
-                                            <article class="small">
-                                                <h4 class="h4">regular updates</h4>
-                                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi.</p>
-                                            </article>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <img src="img/theme-1/icon6.png" alt=""/>
-                                            <article class="small">
-                                                <h4 class="h4">many addons</h4>
-                                                <p>Praesent at vestibulum tortor. Praesent condimentum efficitur massa, necpulvinar tortor semper quisl.</p>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- BLOCK "TYPE 3" -->
-                        </div>
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <!-- Header Section Start -->
+        <header class="header--section">
+            <!-- Header Topbar Start -->
+            <div class="header--topbar bg--color-dark">
+                <div class="container">
+                    <!-- Header Topbar Links Start -->
+                    <ul class="nav links float--left hidden-xxs">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                    <!-- Header Topbar Links End -->
 
-                        <div class="image-block mob-hide wow fadeInRight" data-wow-delay="0.3s">
-                            <img class="center-image" src="img/content/Home-1/big_content_image_2.jpg" alt=""/>
-                        </div>
-                    </div>
+                    <!-- Header Topbar Cart Start -->
+                    <ul class="nav cart float--right">
+                        <li><a href="cart.html"><i class="fa fa-shopping-basket"></i> 3</a></li>
+                    </ul>
+                    <!-- Header Topbar Cart End -->
+
+                    <!-- Header Topbar Social Start -->
+                    <ul class="nav social float--right">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                    <!-- Header Topbar Social End -->
                 </div>
             </div>
-            <!-- BLOCK "TYPE 2" -->
-            
-            <!-- BLOCK "TYPE 4" -->
-            <div class="block type-4">
-                <div class="container type-4-text">
-                    <div class="row">
-                        <div class="col-md-6 wow flipInY" data-wow-delay="0.3s">
-                            <article class="normall">
-                                <h2 class="h2 titel-left">ui</h2>
-                                <h3 class="h3">Modern User Interface</h3>
-                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor sed. Sed eget justo at erat suscipit tristique sit.</p>
-                            </article>
-                        </div>
-                        <div class="col-md-6 wow flipInY" data-wow-delay="0.6s">
-                            <article class="normall">
-                                <h2 class="h2 titel-left">ux</h2>
-                                <h3 class="h3">User Experience For All</h3>
-                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor sed. Sed eget justo at erat suscipit tristique sit.</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 4" -->
-            
-            <!-- BLOCK "TYPE 1" -->
-            <div class="block type-1 type-1-1 scroll-to-block" data-id="benefits">
-                <div class="clip">	
-                    <div class="bg" style="background-image:url(img/content/Home-1/benefits_bg.jpg);">
-                    </div>
-                    <div class="bg-span"></div>
-                </div>
-                <div class="container type-1-text">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 type-1-center">
-                            <article class="big white wow flipInX" data-wow-delay="0.3s">
-                                <h2 class="h2 titel-top">take more with us</h2>
-                                <p>Tonsequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa pharetra dolor sed.</p>
-                            </article>
-                            <div class="marvel-device-wrap wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="marvel-device iphone6plus black">
-                                    <div class="top-bar"></div>
-                                    <div class="sleep"></div>
-                                    <div class="volume"></div>
-                                    <div class="camera"></div>
-                                    <div class="sensor"></div>
-                                    <div class="speaker"></div>
-                                    <div class="screen">
-                                        <!-- Content goes here -->
-                                    </div>
-                                    <div class="home"></div>
-                                    <div class="bottom-bar"></div>
-                                </div>
-                                <div class="iphone-image-wrap">
-                                    <div class="iphone-image-wrap-move">
-                                        <img src="img/content/Home-1/benefits_slider_image_1.jpg" alt="" />
-                                        <img src="img/content/Home-1/benefits_slider_image_2.jpg" alt="" />
-                                        <img src="img/content/Home-1/benefits_slider_image_3.jpg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                   
-                    </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 1" -->
-            
-            <!-- BLOCK "TYPE 3" -->
-            <div class="block type-3 type-3-1">
-                <div class="container type-3-text">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.3s">
-                            <img src="img/theme-1/icon10.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">online shopping</h5>
-                                <p>Etiam neque tortor, bibendum id maximus vitae, tincidunt id libero. Morbi ac leo vitae sapien rutrum sempe.</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.6s">
-                            <img src="img/theme-1/icon11.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">multimedia archives</h5>
-                                <p>Vestibulum accumsan est malesuada sem auctor, eu aliquet nisi ornare. Aliquam dapibus lectus </p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.9s">
-                            <img src="img/theme-1/icon12.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">quick settings</h5>
-                                <p>Fusce ullamcorper turpis at eros blandit, at iaculis eros bibendum. In diam erat, gravida sit amet aliquet vitae</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.3s">
-                            <img src="img/theme-1/icon13.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">global weather</h5>
-                                <p>Mauris aliquam neque risus, eget fermentum ex posuere et. Nam interdum odio ante, nec sollicitudin</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.6s">
-                            <img src="img/theme-1/icon14.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">personal planners</h5>
-                                <p>Ullamcorper turpis at eros blandit, at iaculis eros bibendum. In diam erat, gravida sit amet aliquet vitae</p>
-                            </article>
-                        </div>
-                        <div class="col-md-4 col-sm-6 little-img-text-entry wow flipInY" data-wow-delay="0.9s">
-                            <img src="img/theme-1/icon15.png" alt=""/>
-                            <article class="small">
-                                <h5 class="h5">your Achievements</h5>
-                                <p>Accumsan est malesuada sem auctor, eu aliquet nisi ornare. Aliquam dapibus lectus dolor, quis pulvinar</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
-            <!-- BLOCK "TYPE 3" -->
-            
-            <!-- BLOCK "TYPE 5" -->
-            <div class="block type-5 scroll-to-block" data-id="how-it-work">
+            <!-- Header Topbar End -->
+
+            <!-- Header Navbar Top Start -->
+            <div class="header--navbar-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="img-wrap-slider">
-                                <div class="img-wrap-move">
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image.png" alt="" />
-                                    </div>
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image_2.png" alt="" />
-                                    </div>
-                                    <div class="img-wrap">
-                                        <img src="img/content/Home-1/how_it_work_image_3.png" alt="" />
-                                    </div>
+                    <!-- Logo Start -->
+                    <div class="logo float--left">
+                        <div class="vc--parent">
+                            <div class="vc--child">
+                                <a href="index.html"><img src="img/logo.png" alt="Quick Fix Logo" data-rjs="2"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo End -->
+
+                    <div class="float--right">
+                        <!-- Header Navbar Top Info Start -->
+                        <div class="header--navbar-top-info float--left">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <ul class="nav">
+                                        <li>
+                                            <div class="icon text--primary">
+                                                <i class="fa fa-vcard-o"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p><a href="tel:+055997766554412">+055997766554412</a></p>
+                                                <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon text--primary">
+                                                <i class="fa fa-home"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>114, free street,</p>
+                                                <p>Dhaka, Bangladesh.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon text--primary">
+                                                <i class="fa fa-clock-o"></i>
+                                            </div>
+                                            <div class="content">
+                                                <p>Mon - Sat (09 am to 08 pm)</p>
+                                                <p class="text--primary">(Sunday Closed)</p>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <article class="normall wow fadeInRight" data-wow-delay="0.3s">
-                                <h2 class="h2 titel-left">How it work</h2>
-                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor. Praesent condimentum efficitur massa, nec congue sem dapibus sed. Sed eget justo at erat suscipit tristique sit. Curabitur nunc erat, consequat in erat ut, congue bibendum nulla.</p>
-                            </article>
-                            <div class="slider register-login wow fadeInRight" data-wow-delay="0.6s">
-                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <article class="normall">
-                                                <h4 class="h4">register & login</h4>
-                                                <h5 class="h5">Vestibulum id est feugiat, condimentum libero sit amet</h5>
-                                                <p>Hendrerit erat. Nulla id ligula ut sapien laoreet sodales id eget massa. Vivamus eleifend non nunc et finibus. Vivamus in nisi quis libero commodo varius. Suspendisse commodo lacinia convallis. Vivamus pulvinar orci eleifend massa aliquet, eu mattis ligula mollis.</p>
-                                            </article>    
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="normall">
-                                                <h4 class="h4">register & login</h4>
-                                                <h5 class="h5">Vestibulum id est feugiat, condimentum libero sit amet</h5>
-                                                <p>Hendrerit erat. Nulla id ligula ut sapien laoreet sodales id eget massa. Vivamus eleifend non nunc et finibus. Vivamus in nisi quis libero commodo varius. Suspendisse commodo lacinia convallis. Vivamus pulvinar orci eleifend massa aliquet, eu mattis ligula mollis.</p>
-                                            </article>    
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <article class="normall">
-                                                <h4 class="h4">register & login</h4>
-                                                <h5 class="h5">Vestibulum id est feugiat, condimentum libero sit amet</h5>
-                                                <p>Hendrerit erat. Nulla id ligula ut sapien laoreet sodales id eget massa. Vivamus eleifend non nunc et finibus. Vivamus in nisi quis libero commodo varius. Suspendisse commodo lacinia convallis. Vivamus pulvinar orci eleifend massa aliquet, eu mattis ligula mollis.</p>
-                                            </article>    
-                                        </div>
-                                    </div>
-                                    <div class="pagination"></div>
+                        <!-- Header Navbar Top Info End -->
+
+                        <!-- Header Navbar Top Button Start -->
+                        <div class="header--navbar-top-btn float--left">
+                            <div class="vc--parent">
+                                <div class="vc--child">
+                                    <a href="index.html#appointment" class="btn btn-default">Make An Appoinment</a>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- Header Navbar Top Button End -->
                     </div>
                 </div>
             </div>
-            <!-- BLOCK "TYPE 5" -->
-            
-            <!-- BLOCK "TYPE 4" -->
-            <div class="block type-4 type-4-1 scroll-to-block" data-id="tech-specs">
-                <div class="container type-4-text">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <article class="normall wow flipInY" data-wow-delay="0.3s">
-                                <h2 class="h2 titel-left">developer & user specks</h2>
-                                <p>Curabitur nunc erat, consequat in erat ut, congue bibendum nulla. Suspendisse id pharetra lacus, et hendrerit mi. Praesent at vestibulum tortor sed. Sed eget justo at erat suscipit tristique sit.</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 wow fadeInLeft" data-wow-delay="0.3s">
-                            <article class="small">
-                                <h5 class="h5">Video quality</h5>
-                                <ul>
-                                    <li>Full HD1920*1080, HD 1024*768</li>
-                                    <li>21:9, 16:9 aspect ratio</li>
-                                    <li>File format MPEG-4, Codec H.264</li>
-                                </ul>
-                            </article>
-                            <article class="small">
-                                <h5 class="h5">audoa quality</h5>
-                                <ul>
-                                    <li>MP3, Ogg Vorbis or AAC can be used</li>
-                                    <li>48 kHz sample rate</li>
-                                    <li>16 bits per sample</li>
-                                    <li>2 channels for stereo audio</li>
-                                    <li>Audio bitrate 128-320Kbps</li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-3 col-md-offset-1 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
-                            <article class="small">
-                                <h5 class="h5">Photography specs</h5>
-                                <ul>
-                                    <li>32MPx back camera</li>
-                                    <li>16MPx front camera</li>
-                                    <li>24 frames per second for high-speed shooting</li>
-                                    <li>20 professional photo filters
-                                    <li>Quick connection with social services</li>
-                                    <li>Day and night photo correction</li>
-                                    <li>Anti noise filters, red eye removing</li>
-                                </ul>
-                            </article>
-                            <article class="small">
-                                <h5 class="h5">Weather info</h5>
-                                <ul>
-                                    <li>Only quality weather info from around the world</li>
-                                    <li>Detailed weather for each city in your hand</li>
-                                </ul>
-                            </article>
-                        </div>
-                        <div class="col-md-3 col-md-offset-1 col-sm-12 wow fadeInLeft" data-wow-delay="0.9s">
-                            <article class="small col-md-12 col-sm-6">
-                                <h5 class="h5">online shopping</h5>
-                                <ul>
-                                    <li>shopping history</li>
-                                    <li>Hot offers according your settings</li>
-                                    <li>Multi-product search</li>
-                                    <li>Opportunity to share with friends interesting offers</li>
-                                    <li>User-friendly interface</li>
-                                </ul>
-                            </article>
-                            <article class="small col-md-12 col-sm-6">
-                                <h5 class="h5">Personal tracking</h5>
-                                <ul>
-                                    <li>Tracking daily activities</li>
-                                    <li>Weekly comparison</li>
-                                    <li>Output data in a variety of charts</li>
-                                    <li>Selection of optimal parameters for you</li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 4" -->
-            
-            <!-- BLOCK "TYPE 6" -->
-            <div class="block type-6 scroll-to-block" data-id="take-a-tour">
+            <!-- Header Navbar Top End -->
+
+            <!-- Header Navbar Start -->
+            <nav class="header--navbar navbar" data-trigger="sticky">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
-                            <article class="normall">
-                                <h2 class="h2 titel-left">take a toure</h2>
-                                <p>Integer elementum efficitur quam et vulputate. Morbi porta, lacus eget consectetur cursus, justo purus porttitor lacus, sit amet suscipit nibh velit eget lectus. Aenean placerat ex et lacus pretium condimentum. Maecenas hendrerit semper sapien. Maecenas lectus mauris, fringilla et odio a, bibendum imperdiet nibh. Aenean eu scelerisque tellus.</p>
-                                <a href="#" class="button black"><span>view video</span></a>
-                            </article>
-                        </div>
-                        <div class="col-md-8 wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="slider touru">
-                                <div class="swiper-container" data-autoplay="0" data-loop="0" data-speed="500" data-center="0" data-slides-per-view="1">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_1.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_2.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_3.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_4.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_5.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_6.jpg" alt="" />
-                                            </a>    
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_7.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_8.jpg" alt="" />
-                                            </a>
-                                            <a href="#" class="touru-thumbs">
-                                                <img src="img/content/Home-1/screens_slider_image_9.jpg" alt="" />
-                                            </a>    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div id="headerNav" class="navbar-collapse collapse float--left">
+                        <!-- Header Nav Links Start -->
+                        <ul class="header--nav-links nav navbar-nav font--secondary">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service<i class="fa fa-angle-down"></i></a>
+
+                                <ul class="dropdown-menu font--primary">
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="service-details.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown megamenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i class="fa fa-angle-down"></i></a>
+
+                                <div class="dropdown-menu font--primary clearfix">
+                                    <div class="row reset--gutter">
+                                        <ul class="nav col-md-3 col-sm-6">
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="pricing.html">Pricing</a></li>
+                                            <li><a href="testimonial.html">Testimonial</a></li>
+                                            <li><a href="experts.html">Experts</a></li>
+                                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul>
+
+                                        <ul class="nav col-md-3 col-sm-6">
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
+                                            <li><a href="gallery.html">Gallery</a></li>
+                                            <li><a href="gallery-details.html">Gallery Details</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="blog-sidebar-left.html">Blog</a></li>
+                                        </ul>
+
+                                        <div class="megamenu-img col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 hidden-xs">
+                                            <img src="img/megamenu-img.jpg" alt="">
                                         </div>
                                     </div>
-                                    <div class="pagination"></div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop<i class="fa fa-angle-down"></i></a>
+
+                                <ul class="dropdown-menu font--primary">
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<i class="fa fa-angle-down"></i></a>
+
+                                <ul class="dropdown-menu font--primary">
+                                    <li><a href="blog-sidebar-left.html">Blog Sidebar Left</a></li>
+                                    <li><a href="blog-sidebar-right.html">Blog Sidebar Right</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- Header Nav Links End -->
                     </div>
-                </div>
-            </div>
-            <!-- BLOCK "TYPE 6" -->
-            
-            <!-- BLOCK "TYPE 7" -->
-            <div class="block type-7 scroll-to-block" data-id="contact">
-                <div class="container">
-                    <div class="row page-tagline">
-                        <div class="col-md-6 col-md-offset-3 wow flipInX" data-wow-delay="0.3s">
-                            <h2 class="title">get in touch</h2>
-                            <div class="description">Praesent at vestibulum tortor. Praesent condimentum efficitur massa, nec congue sem dapibus sed. Sed eget justo at erat suscipit tristique sit.</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="contact-thumbs">
-                                <img src="img/theme-1/icon7.png" alt=""/>
-                                <article class="normall">
-                                    <p>
-                                      Tel:
-                                      <br>
-                                      <a href="tel:43477596204">+4 347.759.6204</a> 
-                                    </p>
-                                </article>
-                            </div>
-                            <div class="contact-thumbs">
-                                <img src="img/theme-1/icon8.png" alt=""/>
-                                <article class="normall">
-                                    <p>
-                                      Email:
-                                      <br>
-                                      <a href="maito:marketing@inspire.com">marketing@inspire.com</a>
-                                    </p>
-                                </article>
-                            </div>    
-                        </div>
-                        <div class="col-md-7 col-md-offset-1 wow fadeInRight" data-wow-delay="0.3s">
-                            <form class="contact-form"  method="post">
-                                <input class="required" type="text" placeholder="Your name" value="" name="name" />
-                                <input class="required" type="text" placeholder="Your email" value="" name="email" />
-                                <input type="text" placeholder="Subject" value="" name="subject" />
-                                <select name="department">
-                                    <option>Department</option>
-                                    <option>Department1</option>
-                                    <option>Department2</option>
-                                    <option>Department3</option>
-                                </select>
-                                <textarea class="required" placeholder="Your message" name="text"></textarea>
-                                <div class="submit-wraper">
-                                    <div class="button">submit message<input type="submit" value="" /></div>
-                                </div>
-                                <input type="hidden" name="mailto" value="marketingsomemailaddress@inspire.com" style="display: none;" />
+
+                    <!-- Header Navbar Search Start -->
+                    <div class="header--nav-search dropdown float--right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+
+                        <div class="dropdown-menu" data-form-validation="true">
+                            <form action="#" method="get">
+                                <input type="search" name="search" placeholder="I’m Looking For..." class="form-control" required>
                             </form>
                         </div>
-                        <div class="form-popup">
-                            <div class="form-popup-close-layer"></div>
-                            <div class="form-popup-content">
-                                <div class="text">Lorem Ipsum Dollor Sit Ammet consectetur dim Elit</div>
+                    </div>
+                    <!-- Header Navbar Search End -->
+                </div>
+            </nav>
+            <!-- Header Navbar End -->
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Banner Section Start -->
+        <div id="banner" class="banner--section pd--80-0">
+            <!-- Banner Slider Start -->
+            <div class="banner--slider owl-carousel" data-owl-dots="true">
+                <!-- Banner Item Start -->
+                <div class="banner--item" data-bg-img="img/banner-img/slider-bg-01.jpg">
+                    <div class="vc--parent">
+                        <div class="vc--child">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Banner Content Start -->
+                                    <div class="banner--content col-md-8">
+                                        <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
+
+                                        <a href="#" class="btn btn-default">Learn More</a>
+                                    </div>
+                                    <!-- Banner Content End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner Item End -->
+
+                <!-- Banner Item Start -->
+                <div class="banner--item" data-bg-img="img/banner-img/slider-bg-02.jpg">
+                    <div class="vc--parent">
+                        <div class="vc--child">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Banner Content Start -->
+                                    <div class="banner--content col-md-8">
+                                        <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
+
+                                        <a href="#" class="btn btn-default">Learn More</a>
+                                    </div>
+                                    <!-- Banner Content End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner Item End -->
+
+                <!-- Banner Item Start -->
+                <div class="banner--item" data-bg-img="img/banner-img/slider-bg-03.jpg">
+                    <div class="vc--parent">
+                        <div class="vc--child">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Banner Content Start -->
+                                    <div class="banner--content col-md-8">
+                                        <h1>We Help To Solution Your Favourite <strong>PC/Mobile Devices</strong></h1>
+
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
+
+                                        <a href="#" class="btn btn-default">Learn More</a>
+                                    </div>
+                                    <!-- Banner Content End -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Banner Item End -->
+            </div>
+            <!-- Banner Slider End -->
+
+            <!-- Banner From Start -->
+            <div class="banner--form" data-form="ajax">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-8">
+                            <form action="sendmail.php" method="post">
+                                <h2 class="h4 text-center">Get  A Free Quote</h2>
+                                
+                                <div class="status"></div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="tel" name="tel" placeholder="Telephone" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="E-mail Address" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="quoteFile">
+                                        <span>Atach Photo</span>
+                                        <input type="file" name="file" class="form-control" id="quoteFile">
+                                        <span><i class="fa fa-paperclip"></i>Choose File</span>
+                                        <span class="file-status">File Name</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Problem In Details" class="form-control" required></textarea>
+                                </div>
+                            
+                                <input type="hidden" name="submitType" value="ajax">
+
+                                <button type="submit" class="btn btn-default">Send Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Banner From End -->
+        </div>
+        <!-- Banner Section End -->
+
+        <!-- Appointment Section Start -->
+        <div id="appointment" class="appointment--section pd--100-0-40">
+            <div class="container">
+                <div class="row row--vc">
+                    <!-- Appointment Form Start -->
+                    <div class="appointment--form col-md-4" data-form="ajax">
+                        <form action="sendmail.php" method="post">
+                            <input type="hidden" name="submitType" value="ajax">
+                            
+                            <h2 class="h4 text--primary text-center">Make An Appoinment</h2>
+
+                            <div class="status"></div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="tel" name="tel" placeholder="Telephone" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="E-mail Address" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="date" placeholder="Date" class="form-control" data-trigger="date" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="time" placeholder="Time" class="form-control" data-trigger="time" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Problem In Details" class="form-control" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-default">Send Request</button>
+                        </form>
+                    </div>
+                    <!-- Appointment Form End -->
+
+                    <!-- Appointment Items Start -->
+                    <div class="appointment--items col-md-8">
+                        <div class="row AdjustRow">
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 01</span>
+
+                                    <div class="icon text--primary">
+                                        <img src="img/appointment-img/icon-01.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Capture Your Problem</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 02</span>
+
+                                    <div class="icon text--primary">
+                                        <img src="img/appointment-img/icon-02.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Get A Quotes</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 03</span>
+
+                                    <div class="icon text--primary">
+                                        <img src="img/appointment-img/icon-03.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Make An Appoinment</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+
+                            <div class="col-xs-6 col-xxs-12">
+                                <!-- Appointment Item Start -->
+                                <div class="appointment--item">
+                                    <span class="step font--secondary">Step - 04</span>
+
+                                    <div class="icon text--primary">
+                                        <img src="img/appointment-img/icon-04.png" alt="" data-rjs="2">
+                                    </div>
+
+                                    <div class="title">
+                                        <h2 class="h4">Delivery</h2>
+                                    </div>
+
+                                    <div class="content">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                    </div>
+                                </div>
+                                <!-- Appointment Item End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment Items End -->
+                </div>
+            </div>
+        </div>
+        <!-- Appointment Section End -->
+
+        <!-- Services Section Start -->
+        <div class="services--section pd--100-0 bg--color-lightgray">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Our Services</h2>
+
+                    <p>What We Do</p>
+                </div>
+                <!-- Section Title End -->
+
+                <div class="row text-center">
+                    <!-- Service Image Start -->
+                    <div class="service--img col-md-4 col-sm-8">
+                        <div class="service--img-inner" data-bg-img="img/services-img/service-img-bg.png">
+                            <!-- Tab Content Start -->
+                            <div class="tab-content">
+                                <!-- Tab Pane Start -->
+                                <div class="tab-pane active" id="serviceImg01">
+                                    <img src="img/services-img/service-img-01.jpg" alt="">
+                                </div>
+                                <!-- Tab Pane End -->
+
+                                <!-- Tab Pane Start -->
+                                <div class="tab-pane" id="serviceImg02">
+                                    <img src="img/services-img/service-img-02.jpg" alt="">
+                                </div>
+                                <!-- Tab Pane End -->
+
+                                <!-- Tab Pane Start -->
+                                <div class="tab-pane" id="serviceImg03">
+                                    <img src="img/services-img/service-img-03.jpg" alt="">
+                                </div>
+                                <!-- Tab Pane End -->
+
+                                <!-- Tab Pane Start -->
+                                <div class="tab-pane" id="serviceImg04">
+                                    <img src="img/services-img/service-img-04.jpg" alt="">
+                                </div>
+                                <!-- Tab Pane End -->
+                            </div>
+                            <!-- Tab Content End -->
+                        </div>
+                    </div>
+                    <!-- Service Image End -->
+
+                    <!-- Service Items Start -->
+                    <div class="service--items col-md-4 col-sm-6 text-right">
+                        <!-- Service Item Start -->
+                        <div class="service--item active">
+                            <div class="dot" data-position-top="16px" data-position-right="-129px"></div>
+
+                            <h3 class="h3">
+                                <a href="#" data-toggle="tab" data-target="#serviceImg01">Computer Repair</a>
+                            </h3>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <a href="service-details.html" class="btn btn-default">View Details</a>
+                        </div>
+                        <!-- Service Item End -->
+
+                        <!-- Service Item Start -->
+                        <div class="service--item">
+                            <div class="dot" data-position-top="13px" data-position-right="-54px"></div>
+
+                            <h3 class="h3">
+                                <a href="#" data-toggle="tab" data-target="#serviceImg02">Tablet Repair</a>
+                            </h3>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <a href="service-details.html" class="btn btn-default">View Details</a>
+                        </div>
+                        <!-- Service Item End -->
+                    </div>
+                    <!-- Service Items End -->
+
+                    <!-- Service Items Start -->
+                    <div class="service--items col-md-4 col-sm-6 float--right">
+                        <!-- Service Item Start -->
+                        <div class="service--item">
+                            <div class="dot" data-position-top="16px" data-position-left="-129px"></div>
+
+                            <h3 class="h3">
+                                <a href="#" data-toggle="tab" data-target="#serviceImg03">Laptop Repair</a>
+                            </h3>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <a href="service-details.html" class="btn btn-default">View Details</a>
+                        </div>
+                        <!-- Service Item End -->
+                        
+                        <!-- Service Item Start -->
+                        <div class="service--item">
+                            <div class="dot" data-position-top="13px" data-position-left="-54px"></div>
+
+                            <h3 class="h3">
+                                <a href="#" data-toggle="tab" data-target="#serviceImg04">Mobile Repair</a>
+                            </h3>
+
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+                            <a href="service-details.html" class="btn btn-default">View Details</a>
+                        </div>
+                        <!-- Service Item End -->
+                    </div>
+                    <!-- Service Items End -->
+                </div>
+
+                <!-- Section Footer Start -->
+                <div class="section--footer text-center">
+                    <a href="services.html" class="btn btn-default">View All Services</a>
+                </div>
+                <!-- Section Footer End -->
+            </div>
+        </div>
+        <!-- Services Section End -->
+
+        <!-- Features Section Start -->
+        <div class="features--section pd--100-0-40">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Why Choose Us</h2>
+
+                    <p>Some of  Our Features</p>
+                </div>
+                <!-- Section Title End -->
+
+                <div class="row AdjustRow">
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-01.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">We Are Professional</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-02.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">Friendly Service</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-03.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">No Fix No Fees</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-04.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">Well Reputation</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-05.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">Free Diagnostics</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-06.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">Low Price Guarantee</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-07.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">Quick Repair Process</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+
+                    <!-- Feature Item Start -->
+                    <div class="feature--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/features-img/icon-08.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="title">
+                            <h3 class="h4">30 Days Warantee</h3>
+                        </div>
+
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+                        </div>
+                    </div>
+                    <!-- Feature Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- Features Section End -->
+
+        <!-- Counter Section Start -->
+        <div class="counter--section pd--100-0-40" data-bg-img="img/counter-img/bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <!-- Counter Item Start -->
+                    <div class="counter--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/counter-img/icon-01.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="info">
+                            <h2 class="title h4 font--primary">Happy Clients</h2>
+                            <h3 class="number h2"><span data-counter-up="numbers">94816</span></h3>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                    
+                    <!-- Counter Item Start -->
+                    <div class="counter--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/counter-img/icon-02.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="info">
+                            <h2 class="title h4 font--primary">Completed Deals</h2>
+                            <h3 class="number h2"><span data-counter-up="numbers">102370</span></h3>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                    
+                    <!-- Counter Item Start -->
+                    <div class="counter--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/counter-img/icon-03.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="info">
+                            <h2 class="title h4 font--primary">Running Procet</h2>
+                            <h3 class="number h2"><span data-counter-up="numbers">579</span></h3>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+
+                    <!-- Counter Item Start -->
+                    <div class="counter--item col-md-3 col-xs-6 col-xxs-12">
+                        <div class="icon">
+                            <img src="img/counter-img/icon-04.png" alt="" data-rjs="2">
+                        </div>
+
+                        <div class="info">
+                            <h2 class="title h4 font--primary">Award Winning</h2>
+                            <h3 class="number h2"><span data-counter-up="numbers">3226</span></h3>
+                        </div>
+                    </div>
+                    <!-- Counter Item End -->
+                </div>
+            </div>
+        </div>
+        <!-- Counter Section End -->
+
+        <!-- Gallery Section Start -->
+        <div class="gallery--section pd--100-0">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Projects From Gallery</h2>
+
+                    <p>Checkout Our Portfolio</p>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Gallery Filter Nav Start -->
+                <div class="gallery--filter-nav font--secondary text-center">
+                    <ul class="nav">
+                        <li class="active" data-target="*">All Items</li>
+                        <li data-target="computer">Computer</li>
+                        <li data-target="laptop">Laptop</li>
+                        <li data-target="tablet">Tablet</li>
+                        <li data-target="mobile">Mobile</li>
+                        <li data-target="other">Others Servecies</li>
+                    </ul>
+                </div>
+                <!-- Gallery Filter Nav End -->
+
+                <!-- Gallery Items Start -->
+                <div class="gallery--items row">
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile laptop">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-01.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Hard Disk Servecing</h3>
+
+                                        <p>Catagory : Computer Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-01.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other tablet">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-02.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Laptop Servecing</h3>
+
+                                        <p>Catagory : Laptop Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-02.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer mobile">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-03.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Tablet Servecing</h3>
+
+                                        <p>Catagory : Tablet Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-03.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="mobile laptop other">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-04.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Mobile Servecing</h3>
+
+                                        <p>Catagory : Mobile Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-04.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="other tablet">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-05.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Laptop Servecing</h3>
+
+                                        <p>Catagory : Laptop Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-05.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="computer mobile">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-06.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Other Servecing</h3>
+
+                                        <p>Catagory : Other Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-06.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="laptop other">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-07.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Motherboard Servecing</h3>
+
+                                        <p>Catagory : Computer Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-07.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+
+                    <!-- Gallery Item Start -->
+                    <div class="gallery--item col-md-3 col-xs-6 col-xxs-12" data-cat="tablet computer">
+                        <div class="gallery--img">
+                            <img src="img/gallery-img/gallery-item-08.jpg" alt="" data-rjs="2">
+
+                            <div class="gallery--info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <h3 class="h4">Other Servecing</h3>
+
+                                        <p>Catagory : Other Repair</p>
+
+                                        <div class="btn-groups">
+                                            <a href="gallery-details.html" class="btn btn-default"><i class="fa fa-chain"></i></a>
+                                            <a href="img/gallery-img/gallery-item-08.jpg" class="btn btn-default" data-popup="img"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gallery Item End -->
+                </div>
+                <!-- Gallery Items End -->
+
+                <!-- Section Footer Start -->
+                <div class="section--footer text-center mt--30">
+                    <a href="gallery.html" class="btn btn-default">See More<i class="fa flm fa-angle-double-right"></i></a>
+                </div>
+                <!-- Section Footer End -->
+            </div>
+        </div>
+        <!-- Gallery Section End -->
+
+        <!-- Pricing Section Start -->
+        <div class="pricing--section pd--100-0-40 bg--color-lightgray">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Our Pricing Package</h2>
+
+                    <p>Here Is Our Pricing Plan</p>
+                </div>
+                <!-- Section Title End -->
+
+                <div class="row AdjustRow">
+                    <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
+                        <div class="pricing--item">
+                            <div class="pricing--icon">
+                                <img src="img/pricing-img/icon-01.png" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="pricing--title">
+                                <h3 class="h4">Desktop Repair</h3>
+                            </div>
+
+                            <div class="pricing--price">
+                                <p>Satarting at ...</p>
+
+                                <h4 class="h2">$25.00</h4>
+                            </div>
+
+                            <div class="pricing--features">
+                                <ul class="nav">
+                                    <li>Service Cost Depends on Your</li>
+                                    <li>Device Problem</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing--footer">
+                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item End -->
+                    </div>
+
+                    <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
+                        <div class="pricing--item">
+                            <div class="pricing--icon">
+                                <img src="img/pricing-img/icon-02.png" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="pricing--title">
+                                <h3 class="h4">iPad/Tablet Repair</h3>
+                            </div>
+
+                            <div class="pricing--price">
+                                <p>Satarting at ...</p>
+
+                                <h4 class="h2">$30.00</h4>
+                            </div>
+
+                            <div class="pricing--features">
+                                <ul class="nav">
+                                    <li>Service Cost Depends on Your</li>
+                                    <li>Device Problem</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing--footer">
+                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item End -->
+                    </div>
+
+                    <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
+                        <div class="pricing--item active">
+                            <div class="pricing--icon">
+                                <img src="img/pricing-img/icon-03.png" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="pricing--title">
+                                <h3 class="h4">Laptop Repair</h3>
+                            </div>
+
+                            <div class="pricing--price">
+                                <p>Satarting at ...</p>
+
+                                <h4 class="h2">$40.00</h4>
+                            </div>
+
+                            <div class="pricing--features">
+                                <ul class="nav">
+                                    <li>Service Cost Depends on Your</li>
+                                    <li>Device Problem</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing--footer">
+                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item End -->
+                    </div>
+
+                    <div class="col-md-3 col-xs-6 col-xxs-12">
+                        <!-- Pricing Item Start -->
+                        <div class="pricing--item">
+                            <div class="pricing--icon">
+                                <img src="img/pricing-img/icon-04.png" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="pricing--title">
+                                <h3 class="h4">Mobile Repair</h3>
+                            </div>
+
+                            <div class="pricing--price">
+                                <p>Satarting at ...</p>
+
+                                <h4 class="h2">$10.00</h4>
+                            </div>
+
+                            <div class="pricing--features">
+                                <ul class="nav">
+                                    <li>Service Cost Depends on Your</li>
+                                    <li>Device Problem</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                    <li>Lorem Ipsum Dummy Text</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing--footer">
+                                <a href="pricing.html" class="btn btn-default">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing Section End -->
+
+        <!-- Experts Section Start -->
+        <div class="experts--section pd--100-0">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Our Experts</h2>
+
+                    <p>Introduce Our Professional</p>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Expert Members Start -->
+                <div class="expert--members owl-carousel" data-owl-items="4" data-owl-margin="30" data-owl-responsive='{"0": {"items": "1"}, "551": {"items": "2"}, "992": {"items": "3"}, "1200": {"items": "4"}}'>
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-01.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Sahjahan Saju</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>Computer Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Sahjahan Saju. I am Computer Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-02.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Mahmudullah Ripon</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>Laptop Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Mahmudullah Ripon. I am Laptop Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-03.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Zobayer Hossen Manik</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>iPad/Tablet Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Zobayer Hossen Manik. I am iPad/Tablet Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-04.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Sabbir Ahmed</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>Mobile Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Sabbir Ahmed. I am Mobile Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-01.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Sahjahan Saju</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>Computer Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Sahjahan Saju. I am Computer Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+
+                    <!-- Expert Member Start -->
+                    <div class="expert--member">
+                        <div class="expert--member-img">
+                            <img src="img/experts-img/member-02.jpg" alt="" data-rjs="2">
+
+                            <div class="expert--member-info bg--overlay">
+                                <div class="vc--parent">
+                                    <div class="vc--child">
+                                        <div class="name">
+                                            <h3 class="h5">Mahmudullah Ripon</h3>
+                                        </div>
+
+                                        <div class="role">
+                                            <p>Laptop Repair Expert</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <p>Hello! I am Mahmudullah Ripon. I am Laptop Repair Expert.</p>
+                                        </div>
+
+                                        <div class="social">
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Expert Member End -->
+                </div>
+                <!-- Expert Members End -->
+
+                <!-- Expert Members Nav Start -->
+                <div class="expert--members-nav text-center">
+                    <div class="btn-groups">
+                        <button type="button" data-trigger="prev.owl.carousel"><i class="fa fm fa-long-arrow-left"></i>Previous</button>
+
+                        <a href="experts.html" title="View All Experts" data-toggle="tooltip" data-placement="top"><i class="fa fa-th-large"></i></a>
+
+                        <button type="button" data-trigger="next.owl.carousel">Next<i class="fa flm fa-long-arrow-right"></i></button>
+                    </div>
+                </div>
+                <!-- Expert Members Nav End -->
+            </div>
+        </div>
+        <!-- Experts Section Start -->
+
+        <!-- Testimonial Section Start -->
+        <div class="testimonial--section pd--100-0" data-bg-img="img/testimonial-img/bg.jpg">
+            <!-- Testimonial Slider Wrapper Start -->
+            <div class="testimonial--slider-wrapper bg--overlay">
+                <div class="container">
+                    <!-- Section Title Start -->
+                    <div class="section--title left">
+                        <h2 class="h2">Satisfied Client’s</h2>
+
+                        <p>What Our Client’s Say</p>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Testimonial Slider Start -->
+                            <div class="testimonial--slider owl-carousel" data-owl-dots="true">
+                                <!-- Testimonial Item Start -->
+                                <div class="testimonial--item">
+                                    <div class="testimonial--content">
+                                        <blockquote>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage rassing hidden.</p>
+                                        </blockquote>
+                                    </div>
+
+                                    <div class="testimonial--rating">
+                                        <ul class="nav">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="testimonial--info">
+                                        <div class="img">
+                                            <img src="img/testimonial-img/client-01.png" alt="" class="img-circle" data-rjs="2">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3 class="h5">Jane Doe</h3>
+
+                                            <p>Professor, United States</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Item End -->
+
+                                <!-- Testimonial Item Start -->
+                                <div class="testimonial--item">
+                                    <div class="testimonial--content">
+                                        <blockquote>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage rassing hidden.</p>
+                                        </blockquote>
+                                    </div>
+
+                                    <div class="testimonial--rating">
+                                        <ul class="nav">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="testimonial--info">
+                                        <div class="img">
+                                            <img src="img/testimonial-img/client-02.png" alt="" class="img-circle" data-rjs="2">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3 class="h5">Jane Roe</h3>
+
+                                            <p>Professor, United States</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Item End -->
+
+                                <!-- Testimonial Item Start -->
+                                <div class="testimonial--item">
+                                    <div class="testimonial--content">
+                                        <blockquote>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage rassing hidden.</p>
+                                        </blockquote>
+                                    </div>
+
+                                    <div class="testimonial--rating">
+                                        <ul class="nav">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star-half-o"></i></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="testimonial--info">
+                                        <div class="img">
+                                            <img src="img/testimonial-img/client-03.png" alt="" class="img-circle" data-rjs="2">
+                                        </div>
+
+                                        <div class="content">
+                                            <h3 class="h5">Janie Doe</h3>
+
+                                            <p>Professor, United States</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Item End -->
+                            </div>
+                            <!-- Testimonial Slider End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Slider Wrapper End -->
+
+            <!-- Testimonial Video Start -->
+            <div class="testimonial--video bg--overlay">
+                <div class="vc--parent">
+                    <div class="vc--child">
+                        <div class="container-fluid">
+                            <div class="col-md-6 col-md-offset-6">
+                                <!-- Testimonial Video Content Start -->
+                                <div class="testimonial--video-content text-center">
+                                    <a href="https://www.youtube.com/watch?v=2GqExKSwTEA" class="play-btn" data-popup="video"><i class="fa fa-play"></i></a>
+
+                                    <h3 class="h3">Watch Video Tour</h3>
+                                </div>
+                                <!-- Testimonial Video Content End -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- BLOCK "TYPE 7" -->
-            
-            <!-- BLOCK "MAP" -->
-            <div>
-                <div id="map-canvas" data-lat="43.653226" data-lng="-107.383184" data-zoom="7">
+            <!-- Testimonial Video End -->
+        </div>
+        <!-- Testimonial Section End -->
 
+        <!-- Blog Section Start -->
+        <div class="blog--section pd--100-0-70">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title">
+                    <h2 class="h2">Latest News/Blog</h2>
+
+                    <p>See Our Latest News</p>
                 </div>
-                <div class="addresses-block">
-                    <a data-lat="43.653226" data-lng="-107.383184" data-string="1. Here is some address or email or phone or something else..."></a>
-                    <a data-lat="57.653226" data-lng="-77.383184" data-string="2. Here is some address or email or phone or something else..."></a>
+                <!-- Section Title End -->
+
+                <div class="row">
+                    <div class="col-md-4 col-xs-6 col-xxs-12">
+                        <!-- Post Item Start -->
+                        <div class="post--item">
+                            <div class="post--img">
+                                <img src="img/blog-img/post-item-01.jpg" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="post--info">
+                                <h3 class="h5"><a href="blog-details.html">Drop Your Project Name</a></h3>
+
+                                <p>By <a href="#">Admin</a><span class="divider">/</span><a href="#">January 19 2017</a><span class="divider">/</span><a href="#">04 Comment</a></p>
+                            </div>
+
+                            <div class="post--content">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered  randomised words slightly believable.</p>
+                            </div>
+
+                            <div class="post--footer">
+                                <a href="blog-details.html" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item End -->
+                    </div>
+
+                    <div class="col-md-4 col-xs-6 col-xxs-12">
+                        <!-- Post Item Start -->
+                        <div class="post--item">
+                            <div class="post--img">
+                                <img src="img/blog-img/post-item-02.jpg" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="post--info">
+                                <h3 class="h5"><a href="blog-details.html">Drop Your Project Name</a></h3>
+
+                                <p>By <a href="#">Admin</a><span class="divider">/</span><a href="#">January 19 2017</a><span class="divider">/</span><a href="#">04 Comment</a></p>
+                            </div>
+
+                            <div class="post--content">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered  randomised words slightly believable.</p>
+                            </div>
+
+                            <div class="post--footer">
+                                <a href="blog-details.html" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item End -->
+                    </div>
+
+                    <div class="col-md-4 hidden-sm hidden-xs show-xxs">
+                        <!-- Post Item Start -->
+                        <div class="post--item">
+                            <div class="post--img">
+                                <img src="img/blog-img/post-item-03.jpg" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="post--info">
+                                <h3 class="h5"><a href="blog-details.html">Drop Your Project Name</a></h3>
+
+                                <p>By <a href="#">Admin</a><span class="divider">/</span><a href="#">January 19 2017</a><span class="divider">/</span><a href="#">04 Comment</a></p>
+                            </div>
+
+                            <div class="post--content">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered  randomised words slightly believable.</p>
+                            </div>
+
+                            <div class="post--footer">
+                                <a href="blog-details.html" class="btn btn-default">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item End -->
+                    </div>
                 </div>
             </div>
-            <!-- BLOCK "MAP" -->
-            
-            <!-- FOOTER -->
-            <footer>
-                <div class="subscribe">
-                    <span class="subscribe-text">Stay informed our updates</span> 
-                    <form>
-                        <input type="email" placeholder="Enter your email" required/>
-                        <input type="submit" value="" />
-                    </form>
-                </div>
-                <div class="footer-bottom">
-                    <div class="footer-linck">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">About Us </a>
-                        <a href="#">Support</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Forum</a>
+        </div>
+        <!-- Blog Section End -->
+
+        <!-- Call To Action Section Start -->
+        <div class="cta--section bg--color-darkgray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- Call To Action Content Start -->
+                        <div class="cta--content">
+                            <h2 class="h3">Looking For A Fast &amp; Reliable Repair Service</h2>
+
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                        </div>
+                        <!-- Call To Action Content Start -->
                     </div>
-                    <div class="media-icon">
-                        <a href="#"><img src="img/theme-1/c-icon.png" alt=""/></a>
-                        <a href="#"><img src="img/theme-1/c-icon1.png" alt=""/></a>
-                        <a href="#"><img src="img/theme-1/c-icon2.png" alt=""/></a>
-                        <a href="#"><img src="img/theme-1/c-icon3.png" alt=""/></a>
-                    </div>
-                    <div class="copy">
-                        <span>© 2015 All rights reserved. O.MNI</span>
+
+                    <div class="col-md-3">
+                        <!-- Call To Action Button Start -->
+                        <div class="cta--btn">
+                            <a href="index.html#banner" class="btn btn-default">Get Free Estimate</a>
+                        </div>
+                        <!-- Call To Action Button Start -->
                     </div>
                 </div>
-                <div class="back-to-top"><i class="fa fa-chevron-up"></i></div>
-            </footer>
-            <!-- FOOTER -->
-            
-            <!-- POPUP "VIDEO" -->
-            <div class="video-popup">
-                <span></span>
-                <span></span>
-                <iframe src="#"></iframe>
-                <a href="#"></a>
             </div>
-            <!-- POPUP "VIDEO" -->
-            
         </div>
-        
-    </div>
+        <!-- Call To Action Section End -->
 
-    <div class="theme-config">
-        <div class="title">Select Color:</div>
-        <div class="colours-wrapper">
-            <div data-theme="theme-1" style="color: #fbc011;" class="entry active"></div>
-            <div data-theme="theme-2" style="color: #00bbd2;" class="entry"></div>
-            <div data-theme="theme-3" style="color: #4caf50;" class="entry"></div>
-            <div data-theme="theme-4" style="color: #ba68c8;" class="entry"></div> 
-            <div data-theme="theme-5" style="color: #d80d0d;" class="entry"></div>
-            <div data-theme="theme-6" style="color: #0045ad;" class="entry"></div>
-            <div data-theme="theme-7" style="color: #dd137b;" class="entry"></div>
-            <div data-theme="theme-8" style="color: #482d1d;" class="entry"></div>            
+        <!-- Footer Section Start -->
+        <div class="footer--section bg--color-dark">
+            <div class="footer--copyright-border"></div>
+
+            <div class="container bg--overlay">
+                <div class="row reset--gutter">
+                    <div class="col-md-3 bg--color-theme bg--overlay">
+                        <!-- Footer About Start -->
+                        <div class="footer--about">
+                            <div class="logo">
+                                <img src="img/footer-logo.png" alt="" data-rjs="2">
+                            </div>
+
+                            <div class="content">
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have available, its  really but the majority to use a passage rassing hidden.</p>
+                            </div>
+
+                            <div class="link">
+                                <a href="about.html">Read More<i class="fa flm fa-angle-double-right"></i></a>
+                            </div>
+
+                            <div class="info">
+                                <ul class="nav">
+                                    <li class="fa-home">House #896, East Sheprapara Beside  of Hazi Asraf Ali School, Dhaka, Bangladesh.</li>
+
+                                    <li class="fa-envelope"><a href="mailto:you@yourmail.com">you@yourmail.com</a>, <a href="mailto:you@yourmail.com">you@yourmail.com</a></li>
+
+                                    <li class="fa-phone-square"><a href="mailto:+055997766554412">+055997766554412</a>, <a href="mailto:005594765243">005594765243</a></li>
+
+                                    <li class="fa-clock-o">Monday - Satarday (09 am to 08 pm) <span>(Sunday Closed)</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer About End -->
+                    </div>
+
+                    <div class="col-md-9">
+                        <!-- Footer Widgets Start -->
+                        <div class="footer--widgets row">
+                            <!-- Footer Widget Start -->
+                            <div class="footer--widget col-md-4">
+                                <div class="widget--title">
+                                    <h2 class="h4">Our Services</h2>
+                                </div>
+
+                                <!-- Links Wdiget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>PC and Mac Repair</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>iPad and Smartphone Repair</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Camera and Lens Repair</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Printer and Scanner Repair</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Television and LCD/LED Display Repair</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Electronics Accessories Sales and Repair</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Wdiget End -->
+                            </div>
+                            <!-- Footer Widget End -->
+
+                            <!-- Footer Widget Start -->
+                            <div class="footer--widget col-md-4">
+                                <div class="widget--title">
+                                    <h2 class="h4">Recent Posts</h2>
+                                </div>
+
+                                <!-- Recent Posts Widget Start -->
+                                <div class="recent-posts--widget">
+                                    <ul class="nav">
+                                        <li class="clearfix">
+                                            <div class="img">
+                                                <a href="blog-details.html"><img src="img/blog-img/recent-post-01.jpg" alt="" data-rjs="2"></a>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3 class="h6"><a href="blog-details.html">The Summer Sppecial Day Out</a></h3>
+                                                <p>Jan 19 2017</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="img">
+                                                <a href="blog-details.html"><img src="img/blog-img/recent-post-02.jpg" alt="" data-rjs="2"></a>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3 class="h6"><a href="blog-details.html">The Post Writen By Saju</a></h3>
+                                                <p>Jan 19 2017</p>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="img">
+                                                <a href="blog-details.html"><img src="img/blog-img/recent-post-03.jpg" alt="" data-rjs="2"></a>
+                                            </div>
+
+                                            <div class="content">
+                                                <h3 class="h6"><a href="blog-details.html">Drop &amp; Drug Your Tagline Here</a></h3>
+                                                <p>Jan 19 2017</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Recent Posts Widget End -->
+                            </div>
+                            <!-- Footer Widget End -->
+
+                            <!-- Footer Widget Start -->
+                            <div class="footer--widget col-md-4">
+                                <div class="widget--title">
+                                    <h2 class="h4">Sign Up For Newsletter</h2>
+                                </div>
+
+                                <!-- Subscribe Widget Start -->
+                                <div class="subscribe--widget" data-form-validation="true">
+                                    <p>Sign Up Our Newsletter to Get Notification Our New Services</p>
+
+                                    <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                                        <div class="input-group">
+                                            <input type="email" name="EMAIL" class="form-control" placeholder="E-mail Address" required>
+                                            
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-default active"><i class="fa fa-send"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
+
+                                    <div class="social">
+                                        <h3 class="h6">Find Us On</h3>
+
+                                        <ul class="nav">
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Subscribe Widget End -->
+                            </div>
+                            <!-- Footer Widget End -->
+                        </div>
+                        <!-- Footer Widgets End -->
+
+                        <!-- Footer Copyright Start -->
+                        <div class="footer--copyright font--secondary clearfix">
+                            <p class="float--left">&copy; Copyright 2017 | All Rights Reserved</p>
+                            <p class="float--right"><a href="#">Quick Fix</a> by Themelooks</p>
+                        </div>
+                        <!-- Footer Copyright End -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="open"><img src="img/gear-icon.png" alt=""><img src="img/gear-icon.png" alt=""><img src="img/gear-icon.png" alt=""></div>
-    </div>
-    
-    
+        <!-- Footer Section End -->
 
-    <script src="js/jquery-2.1.3.min.js"></script>
+        <!-- Back To Top Button Start -->
+        <div class="back-to-top-btn">
+            <a href="#" class="btn btn-default active"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <!-- Back To Top Button End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- ==== jQuery Library ==== -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- ==== jQuery UI Library ==== -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- ==== Bootstrap ==== -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/idangerous.swiper.min.js"></script>
-    <script src="js/global.js"></script>
-    
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en"></script>
-    <script src="js/map.js"></script>
 
-    <script src="js/wow.min.js"></script>
-    <script>
-        var wow = new WOW(
-            {
-                boxClass:     'wow',      // animated element css class (default is wow)
-                animateClass: 'animated', // animation css class (default is animated)
-                offset:       100,          // distance to the element when triggering the animation (default is 0)
-                mobile:       true,       // trigger animations on mobile devices (default is true)
-                live:         true,       // act on asynchronously loaded content (default is true)
-                callback:     function(box) {
-                  // the callback is fired every time an animation is started
-                  // the argument that is passed in is the DOM node being animated
-                }
-            }
-        );
-        $(window).load(function(){
-            wow.init();    
-        });
-        
-    </script>
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <script src="js/owl.carousel.min.js"></script>
 
-    <script src="js/subscription.js"></script>
+    <!-- ==== Isotope Plugin ==== -->
+    <script src="js/isotope.min.js"></script>
+
+    <!-- ==== jQuery FakeLoader Plugin ==== -->
+    <script src="js/fakeLoader.min.js"></script>
+
+    <!-- ==== jQuery Sticky Plugin ==== -->
+    <script src="js/jquery.sticky.min.js"></script>
+
+    <!-- ==== jQuery Timepicker Plugin ==== -->
+    <script src="js/jquery.timepicker.min.js"></script>
+
+    <!-- ==== jQuery Magnific Popup Plugin ==== -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- ==== jQuery Directional Hover Plugin ==== -->
+    <script src="js/jquery.directional-hover.min.js"></script>
+
+    <!-- ==== jQuery Validation Plugin ==== -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- ==== jQuery Form Plugin ==== -->
+    <script src="js/jquery.form.min.js"></script>
+
+    <!-- ==== jQuery Waypoints Plugin ==== -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- ==== jQuery CounterUp Plugin ==== -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- ==== RetinaJS Plugin ==== -->
+    <script src="js/retina.min.js"></script>
+
+    <!-- ==== Main JavaScript ==== -->
+    <script src="js/main.js"></script>
 </body>
 </html>
